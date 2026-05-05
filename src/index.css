@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-white text-gray-900 overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold tracking-tight leading-tight;
+  }
+  
+  p {
+    @apply font-sans font-normal leading-relaxed text-gray-600;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Hide arrows from number inputs with class hide-arrows */
+input.hide-arrows::-webkit-outer-spin-button,
+input.hide-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input.hide-arrows[type=number] {
+  -moz-appearance: textfield;
+}
