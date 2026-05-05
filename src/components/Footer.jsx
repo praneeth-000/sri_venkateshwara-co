@@ -43,6 +43,16 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
+              {/* Hidden admin link — subtle, for owner use */}
+              <li className="pt-2 border-t border-gray-700/50">
+                <Link
+                  to="/admin"
+                  id="footer-admin-link"
+                  className="inline-block text-gray-600 hover:text-gray-400 text-xs transition-colors duration-300"
+                >
+                  Admin
+                </Link>
+              </li>
             </ul>
           </div>
 

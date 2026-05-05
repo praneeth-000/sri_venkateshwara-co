@@ -38,12 +38,12 @@ const Products = () => {
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight">Quality Products from Trusted Brands</h3>
           </div>
           
-          <div className="flex space-x-2 mt-6 md:mt-0 bg-white p-1.5 rounded-full border border-gray-100 shadow-sm">
+          <div className="flex flex-wrap justify-center gap-2 mt-6 md:mt-0 bg-white p-1.5 rounded-xl md:rounded-full border border-gray-100 shadow-sm">
             {["All", "Electrical", "Agriculture"].map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-8 py-2.5 rounded-full font-bold transition-all duration-300 ${
+                className={`px-6 sm:px-8 py-3 min-h-[44px] rounded-full font-bold transition-all duration-300 ${
                   filter === cat ? "bg-green-600 text-white shadow-md" : "text-gray-500 hover:text-gray-900"
                 }`}
               >

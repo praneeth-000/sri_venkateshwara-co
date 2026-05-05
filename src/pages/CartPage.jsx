@@ -87,7 +87,7 @@ const CartPage = () => {
                             const current = parseInt(item.quantity) || 1;
                             if (current > 1) updateQuantity(item.id, current - 1);
                           }}
-                          className="px-3 py-1 text-gray-600 hover:bg-gray-100 rounded-l-md transition-colors"
+                          className="px-4 py-2 min-w-[44px] min-h-[44px] text-gray-600 hover:bg-gray-100 rounded-l-md transition-colors flex items-center justify-center font-medium"
                         >
                           -
                         </button>
@@ -110,14 +110,14 @@ const CartPage = () => {
                               updateQuantity(item.id, 1);
                             }
                           }}
-                          className="w-16 text-center py-1 text-gray-900 font-medium border-l border-r border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-500 hide-arrows"
+                          className="w-16 text-center py-2 min-h-[44px] text-gray-900 font-medium border-l border-r border-gray-300 focus:outline-none focus:ring-1 focus:ring-green-500 hide-arrows"
                         />
                         <button 
                           onClick={() => {
                             const current = parseInt(item.quantity) || 1;
                             updateQuantity(item.id, current + 1);
                           }}
-                          className="px-3 py-1 text-gray-600 hover:bg-gray-100 rounded-r-md transition-colors"
+                          className="px-4 py-2 min-w-[44px] min-h-[44px] text-gray-600 hover:bg-gray-100 rounded-r-md transition-colors flex items-center justify-center font-medium"
                         >
                           +
                         </button>

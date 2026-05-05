@@ -91,7 +91,7 @@ const GrabItPage = () => {
                 <div className="mt-4">
                   <button
                     onClick={() => handleAddToCart(product)}
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
+                    className="w-full flex items-center justify-center px-4 py-3 min-h-[44px] border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
                   >
                     <FaShoppingCart className="mr-2" /> Add to Cart
                   </button>

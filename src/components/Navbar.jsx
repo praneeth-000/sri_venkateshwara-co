@@ -97,7 +97,7 @@ const Navbar = () => {
               to={link.href} 
               onClick={() => setIsOpen(false)} 
               className={({ isActive }) => 
-                `font-bold text-lg transition-colors ${
+                `font-bold text-lg transition-colors block w-full text-center py-4 ${
                   isActive ? "text-green-600" : "text-gray-800 hover:text-green-600"
                 }`
               }

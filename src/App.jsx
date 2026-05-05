@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 // Admin System
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminPage from "./pages/AdminPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 // Context
@@ -24,6 +25,7 @@ import { CartProvider } from "./context/CartContext";
 import GrabItPage from "./pages/GrabItPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
+import SuccessPage from "./pages/SuccessPage";
 
 // Scroll to top helper on route change
 const ScrollToTop = () => {
@@ -49,11 +51,15 @@ const App = () => {
           <Route path="/grab-it" element={<GrabItPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/success" element={<SuccessPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
           
-          {/* Admin Routes */}
-          <Route path="/admin" element={<AdminLogin />} />
+          {/* Simple password-protected Admin page */}
+          <Route path="/admin" element={<AdminPage />} />
+
+          {/* Legacy Firebase Admin Routes */}
+          <Route path="/admin/firebase" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={
             <ProtectedRoute>
               <AdminDashboard />

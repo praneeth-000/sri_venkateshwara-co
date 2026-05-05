@@ -54,3 +54,27 @@ input.hide-arrows::-webkit-inner-spin-button {
 input.hide-arrows[type=number] {
   -moz-appearance: textfield;
 }
+
+/* Admin secret key gate shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  15%       { transform: translateX(-8px); }
+  30%       { transform: translateX(8px); }
+  45%       { transform: translateX(-6px); }
+  60%       { transform: translateX(6px); }
+  75%       { transform: translateX(-4px); }
+  90%       { transform: translateX(4px); }
+}
+.animate-shake {
+  animation: shake 0.6s ease-in-out;
+}
+
+/* Success page checkmark bounce (plays once) */
+@keyframes bounceOnce {
+  0%, 100% { transform: translateY(0); }
+  30%       { transform: translateY(-14px); }
+  60%       { transform: translateY(-6px); }
+}
+.animate-bounce-once {
+  animation: bounceOnce 0.9s ease-in-out;
+}
